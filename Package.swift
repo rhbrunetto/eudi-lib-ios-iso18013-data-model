@@ -7,7 +7,6 @@ let package = Package(
     name: "MdocDataModel18013",
     defaultLocalization: "en",
 	platforms: [.macOS(.v13), .iOS(.v16), .tvOS(.v12), .watchOS(.v10)],
-    swiftLanguageModes: [.v5],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -32,7 +31,8 @@ let package = Package(
         .testTarget(
             name: "MdocDataModel18013Tests",
             dependencies: ["MdocDataModel18013"], resources: [.process("Resources")]),
-    ]
+    ],
+    swiftLanguageModes: [.v5]
 )
 
 #if !canImport(CryptoKit)
