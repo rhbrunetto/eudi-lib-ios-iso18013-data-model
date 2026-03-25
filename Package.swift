@@ -7,6 +7,7 @@ let package = Package(
     name: "MdocDataModel18013",
     defaultLocalization: "en",
 	platforms: [.macOS(.v13), .iOS(.v16), .tvOS(.v12), .watchOS(.v10)],
+    swiftLanguageModes: [.v5],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
